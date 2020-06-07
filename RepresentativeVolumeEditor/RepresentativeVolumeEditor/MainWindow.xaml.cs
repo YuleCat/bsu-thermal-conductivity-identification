@@ -1,4 +1,5 @@
-﻿using RepresentativeVolumeEditor.Services;
+﻿using MongoDB.Driver.Linq;
+using RepresentativeVolumeEditor.Services;
 using RepresentativeVolumeEditor.Utils;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,7 @@ namespace RepresentativeVolumeEditor
         }
 
         private void InitializeMaterialsGrid()
-        {
+        { 
             var materialsCount = this.materials.Count;
             for (int i = 0; i < materialsCount; ++i)
             {
